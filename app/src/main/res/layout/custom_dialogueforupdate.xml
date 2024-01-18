@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/updatedetailstitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="UPDATE DETAILS?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+         />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etupdatename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NEW NAME"
+         />
+
+    <TextView
+        android:id="@+id/textviemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+       />
+
+
+    <EditText
+        android:id="@+id/etemaildid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NEW EMAIL-ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviemail" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|right"
+    android:padding="3dp"
+    >
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:backgroundTint="@color/red"
+        android:text="update"
+        />
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="cancel"
+        />
+</LinearLayout>
+
+
+</LinearLayout>
